@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "test1",
+      "account": [
+        {
+          "accountId": "220-1234-5678",
+          "balance": 10000,
+          "interestRate": 0.03,
+          "transactionDetails": [
+            {
+              "date": "2022-04-02 13:00:00",
+              "type": "deposit",
+              "depositor": "test2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "test2",
+      "account": [
+        {
+          "accountId": "221-3452-2356",
+          "balance": 2000,
+          "interestRate": 0.05,
+          "transactionDetails": [
+            {
+              "date": "2022-04-02 13:00:00",
+              "type": "transfer"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

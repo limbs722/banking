@@ -1,6 +1,8 @@
 import React from 'react';
 
-const AccountCreate = () => {};
+function AccountCreate() {
+  return <div></div>;
+}
 
 export default AccountCreate;
 // my account

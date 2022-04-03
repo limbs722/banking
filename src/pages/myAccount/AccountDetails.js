@@ -1,5 +1,7 @@
 import React from 'react';
 
-const AccountDetails = () => {};
+function AccountDetails() {
+  return <div></div>;
+}
 
 export default AccountDetails;

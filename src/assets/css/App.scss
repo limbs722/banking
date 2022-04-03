@@ -24,6 +24,7 @@ h6 {
   width: calc(100% - 80px);
   transition: all 0.2s;
 }
+
 .ant-layout-sider {
   background: #3b3b3b;
   height: 100%;
@@ -55,31 +56,6 @@ h6 {
         line-height: 16px;
         font-weight: bold;
       }
-    }
-
-    &.close {
-      .anticon {
-        left: 55px;
-      }
-      .aside-logo-02 {
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s;
-      }
-    }
-    .aside-logo-01,
-    .aside-logo-02 {
-      position: absolute;
-      opacity: 1;
-      visibility: visible;
-      height: 28px;
-      top: 6px;
-      left: 15px;
-      transition: all 0.3s;
-    }
-    .aside-logo-02 {
-      top: 7px;
-      left: 56px;
     }
   }
 }

@@ -32,7 +32,7 @@ function Aside() {
 
   return (
     <Sider collapsible trigger={null} width={180}>
-      <Menu theme="dark" defaultSelectedKeys={['1']}>
+      <Menu defaultSelectedKeys={['1']}>
         <Menu.Item key="1">
           <Link to="/">계좌 조회</Link>
         </Menu.Item>

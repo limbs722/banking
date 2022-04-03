@@ -3,38 +3,52 @@
     {
       "id": 1,
       "username": "test1",
-      "account": [
+      "accounts": [
         {
           "accountId": "220-1234-5678",
           "balance": 10000,
-          "interestRate": 0.03,
-          "transactionDetails": [
-            {
-              "date": "2022-04-02 13:00:00",
-              "type": "deposit",
-              "accountInfo": "test2",
-              "amount": 2000
-            }
-          ]
+          "interestRate": 0.03
         }
       ]
     },
     {
       "id": 2,
       "username": "test2",
-      "account": [
+      "accounts": [
         {
           "accountId": "221-3452-2356",
           "balance": 2000,
-          "interestRate": 0.05,
-          "transactionDetails": [
-            {
-              "date": "2022-04-02 13:00:00",
-              "type": "transfer",
-              "accountInfo": "220-1234-5678",
-              "amount": 2000
-            }
-          ]
+          "interestRate": 0.05
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "userName": "HONG GIL DONG",
+      "accountId": "220-1234-5678",
+      "balance": 10000,
+      "interestRate": 0.03,
+      "transactionDetails": [
+        {
+          "date": "2022-04-02 13:00:00",
+          "type": "deposit",
+          "accountId": "220-1234-5678",
+          "amount": 2000
+        }
+      ]
+    },
+    {
+      "username": "KIM MI MI",
+      "accountId": "221-3452-2356",
+      "balance": 2000,
+      "interestRate": 0.05,
+      "transactionDetails": [
+        {
+          "date": "2022-04-02 13:10:00",
+          "type": "transfer",
+          "accountId": "220-1234-5678",
+          "amount": 2000
         }
       ]
     }

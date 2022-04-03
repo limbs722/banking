@@ -12,7 +12,8 @@
             {
               "date": "2022-04-02 13:00:00",
               "type": "deposit",
-              "depositor": "test2"
+              "accountInfo": "test2",
+              "amount": 2000
             }
           ]
         }
@@ -29,7 +30,9 @@
           "transactionDetails": [
             {
               "date": "2022-04-02 13:00:00",
-              "type": "transfer"
+              "type": "transfer",
+              "accountInfo": "220-1234-5678",
+              "amount": 2000
             }
           ]
         }

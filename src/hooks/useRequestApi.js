@@ -1,15 +1,13 @@
 import { useEffect, useState } from 'react';
 import { ApiUtil } from '../utils';
 
-const useRequestApi = (params) => {
+function useRequestApi(params) {
   const [requestParams, setRequestParams] = useState(params);
   const [response, setResponse] = useState(null);
-  const [isFetching, setIsFetching] = useState(true);
 
   useEffect(() => {
     const getData = async () => {
       const res = await ApiUtil.requestApi(requestParams);
-      setIsFetching(false);
       const { data, msg } = res;
 
       if (!!msg) return;
@@ -19,7 +17,11 @@ const useRequestApi = (params) => {
     getData();
   }, [requestParams]);
 
-  return { response, isFetching };
-};
+  function onApiRequest(params) {
+    setRequestParams(params);
+  }
+
+  return { response, onApiRequest };
+}
 
 export default useRequestApi;

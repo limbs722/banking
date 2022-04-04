@@ -4,7 +4,7 @@ body,
 .wrapper-main {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
 }
 h1,
 h2,
@@ -18,44 +18,50 @@ h6 {
 .wrapper-main {
   z-index: 1;
   height: 100%;
-}
 
-.wrapper-content {
-  width: calc(100% - 80px);
-  transition: all 0.2s;
-}
+  .ant-layout-sider {
+    background: #3b3b3b;
+    height: 100%;
+    padding-bottom: 0;
+    overflow-y: overlay;
 
-.ant-layout-sider {
-  background: #3b3b3b;
-  height: 100%;
-  padding-bottom: 0;
-  overflow-y: overlay;
+    .menu-trigger {
+      position: relative;
+      box-sizing: border-box;
+      height: 85px;
+      text-align: center;
 
-  .menu-trigger {
-    position: relative;
-    box-sizing: border-box;
-    height: 85px;
-    text-align: center;
-
-    .trigger {
-      position: absolute;
-      width: 100%;
-      top: 30px;
-      left: 0;
-
-      .anticon {
-        display: none;
+      .trigger {
         position: absolute;
-        top: 12px;
-        right: 10px;
-        font-weight: bold;
-        cursor: pointer;
-      }
-      div {
-        display: inline-block;
-        line-height: 16px;
-        font-weight: bold;
+        width: 100%;
+        top: 30px;
+        left: 0;
+
+        .anticon {
+          display: none;
+          position: absolute;
+          top: 12px;
+          right: 10px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        div {
+          display: inline-block;
+          line-height: 16px;
+          font-weight: bold;
+        }
       }
     }
   }
+}
+
+.wrapper-content {
+  position: absolute;
+  top: 0;
+  left: 180px;
+  width: calc(100% - 180px);
+  height: 100%;
+  min-height: 700px;
+  transition: all 0.2s;
+  overflow-y: scroll;
 }

@@ -36,6 +36,9 @@ function AccountInfo() {
         return acc;
       }, []);
       setAccountList(list);
+    } else {
+      setIsCreate(false);
+      onApiRequest(GET_API_PARAMS);
     }
   }, [response]);
 
@@ -77,7 +80,17 @@ function AccountInfo() {
 
     setIsCreate(true);
     onApiRequest(createAccountParams);
-    onApiRequest(GET_API_PARAMS);
+  }
+
+  function onClick(e, type) {
+    switch (type) {
+      case 'deposit':
+        break;
+      case 'withdrawal':
+        break;
+      default:
+        break;
+    }
   }
 
   return (
@@ -87,7 +100,19 @@ function AccountInfo() {
         extra={<Button onClick={() => createAccount()}>계좌 생성</Button>}
       >
         {accountList.map((item, idx) => (
-          <Card key={idx} type="inner" title={item.accountId}>
+          <Card
+            key={idx}
+            type="inner"
+            title={item.accountId}
+            extra={
+              <>
+                <Button>거래 내역</Button>
+                <Button>출금</Button>
+                <Button>입금</Button>
+                <Button>이체</Button>
+              </>
+            }
+          >
             {`잔고 : ${getBeautifiedNum(item.balance)} 원`}
           </Card>
         ))}

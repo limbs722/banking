@@ -17,11 +17,8 @@ function Aside() {
     let key;
 
     switch (menuName) {
-      case 'accountCreate':
-        key = '2';
-        break;
       case 'accountDetails':
-        key = '3';
+        key = '2';
         break;
       default:
         key = '1';
@@ -37,9 +34,6 @@ function Aside() {
           <Link to="/">계좌 조회</Link>
         </Menu.Item>
         <Menu.Item key="2">
-          <Link to="/accountCreate">계좌 생성</Link>
-        </Menu.Item>
-        <Menu.Item key="3">
           <Link to="/accountDetails">거래 내역</Link>
         </Menu.Item>
       </Menu>

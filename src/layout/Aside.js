@@ -36,6 +36,15 @@ function Aside() {
         <Menu.Item key="2">
           <Link to="/accountDetails">거래 내역</Link>
         </Menu.Item>
+        <Menu.Item key="3">
+          <Link to="/deposit">입금</Link>
+        </Menu.Item>
+        <Menu.Item key="4">
+          <Link to="/withdrawl">출금</Link>
+        </Menu.Item>
+        <Menu.Item key="5">
+          <Link to="/transfer">계좌 이체</Link>
+        </Menu.Item>
       </Menu>
     </Sider>
   );

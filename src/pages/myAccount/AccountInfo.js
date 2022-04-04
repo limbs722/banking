@@ -3,6 +3,7 @@ import moment from 'moment';
 import { useRequestApi } from '../../hooks';
 import { Card, Button } from 'antd';
 import 'moment/locale/ko';
+import '../../assets/css/AccountInfo.scss';
 
 const USER_NAME = 'HONG GIL DONG';
 
@@ -71,7 +72,7 @@ function AccountInfo() {
       params: {
         id: id,
         userName: USER_NAME,
-        accountId: '220-1234-' + id,
+        accountId: `220-1234-${id}`,
         createDate: moment().format('YYYY-MM-DD HH:mm:ss'),
         balance: 0,
         interestRate: interestRate * 0.01,
@@ -80,17 +81,6 @@ function AccountInfo() {
 
     setIsCreate(true);
     onApiRequest(createAccountParams);
-  }
-
-  function onClick(e, type) {
-    switch (type) {
-      case 'deposit':
-        break;
-      case 'withdrawal':
-        break;
-      default:
-        break;
-    }
   }
 
   return (

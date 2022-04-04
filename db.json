@@ -1,28 +1,4 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "username": "test1",
-      "accounts": [
-        {
-          "accountId": "220-1234-5678",
-          "balance": 10000,
-          "interestRate": 0.03
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "username": "test2",
-      "accounts": [
-        {
-          "accountId": "221-3452-2356",
-          "balance": 2000,
-          "interestRate": 0.05
-        }
-      ]
-    }
-  ],
   "accounts": [
     {
       "userName": "HONG GIL DONG",
@@ -53,84 +29,44 @@
       ]
     },
     {
-      "id": 13047,
+      "id": 10992,
       "userName": "HONG GIL DONG",
-      "accountId": 13047,
-      "createDate": "2022-04-04 09:12:09",
-      "balance": 0,
-      "interestRate": 0.06
-    },
-    {
-      "id": 13148,
-      "userName": "HONG GIL DONG",
-      "accountId": 13148,
-      "createDate": "2022-04-04 09:12:40",
-      "balance": 0,
-      "interestRate": 0.05
-    },
-    {
-      "id": 16487,
-      "userName": "HONG GIL DONG",
-      "accountId": 16487,
-      "createDate": "2022-04-04 09:15:40",
-      "balance": 0,
-      "interestRate": 0.06
-    },
-    {
-      "id": 11258,
-      "userName": "HONG GIL DONG",
-      "accountId": 11258,
-      "createDate": "2022-04-04 09:16:53",
-      "balance": 0,
-      "interestRate": 0.04
-    },
-    {
-      "id": 16001,
-      "userName": "HONG GIL DONG",
-      "accountId": 16001,
-      "createDate": "2022-04-04 09:18:23",
+      "accountId": "220-1234-10992",
+      "createDate": "2022-04-04 11:06:36",
       "balance": 0,
       "interestRate": 0.07
     },
     {
-      "id": 12695,
+      "id": 10447,
       "userName": "HONG GIL DONG",
-      "accountId": 12695,
-      "createDate": "2022-04-04 09:18:28",
+      "accountId": "220-1234-10447",
+      "createDate": "2022-04-04 11:07:01",
       "balance": 0,
-      "interestRate": 0.03
+      "interestRate": 0.04
     },
     {
-      "id": 10429,
+      "id": 10398,
       "userName": "HONG GIL DONG",
-      "accountId": "220-1234-10429",
-      "createDate": "2022-04-04 09:23:50",
+      "accountId": "220-1234-10398",
+      "createDate": "2022-04-04 11:07:02",
       "balance": 0,
       "interestRate": 0.08
     },
     {
-      "id": 10710,
+      "id": 10082,
       "userName": "HONG GIL DONG",
-      "accountId": "220-1234-10710",
-      "createDate": "2022-04-04 09:40:17",
+      "accountId": "220-1234-10082",
+      "createDate": "2022-04-04 11:07:03",
       "balance": 0,
-      "interestRate": 0.03
+      "interestRate": 0.02
     },
     {
-      "id": 10686,
+      "id": 10470,
       "userName": "HONG GIL DONG",
-      "accountId": "220-1234-10686",
-      "createDate": "2022-04-04 09:48:29",
+      "accountId": "220-1234-10470",
+      "createDate": "2022-04-04 11:07:05",
       "balance": 0,
-      "interestRate": 0.01
-    },
-    {
-      "id": 10981,
-      "userName": "HONG GIL DONG",
-      "accountId": "220-1234-10981",
-      "createDate": "2022-04-04 10:18:10",
-      "balance": 0,
-      "interestRate": 0.03
+      "interestRate": 0.08
     }
   ]
 }
